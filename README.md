@@ -1,4 +1,4 @@
-# laravel relationships
+# Laravel Relationships
 # Many To Many Relationships
 App\Models\Post::insert(['title'=>'Html','user_id'=>1]);
  $post = App\Models\Post::find(1);
