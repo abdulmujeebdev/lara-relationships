@@ -28,6 +28,6 @@ use $this->belongsToMany(Tag::class)->as('assigned');
 
 ### Defining Custom Intermediate Table Models
 #### define custom pivot model in many-to-many relationship, you may call using() when defining the relationship. used for define additional methods on the pivot model.
-$this->belongsToMany(Tag::class)->using(PostAssignTags::class)
+$this->belongsToMany(Tag::class)->using(PostAssignTags::class) <br/>
 Normal Pivot model extends from Illuminate\Database\Eloquent\Relations\Pivot while Polymorphism manytomany pivot model extends from Illuminate\Database\Eloquent\Relations\MorphPivot 
 #### Pivot models may not use the SoftDeletes trait. If you need to soft delete pivot records consider converting your pivot model to an actual Eloquent model.
