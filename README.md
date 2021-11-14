@@ -35,6 +35,6 @@ Normal Pivot model extends from Illuminate\Database\Eloquent\Relations\Pivot whi
 #### Pivot models may not use the SoftDeletes trait. If you need to soft delete pivot records consider converting your pivot model to an actual Eloquent model.
 # Dynamic Relationship
 resolveRelationUsing method to define relations between Eloquent models at runtime. While not typically recommended for normal application development, this may occasionally be useful when developing Laravel packages.<br/>
-Order::resolveRelationUsing('customer', function ($orderModel) {
-    return $orderModel->belongsTo(Customer::class, 'customer_id');
+<br/> Order::resolveRelationUsing('customer', function ($orderModel) {<br/>
+    return $orderModel->belongsTo(Customer::class, 'customer_id');<br/>
 });
